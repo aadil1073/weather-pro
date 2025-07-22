@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App Pro</title>
+    <link rel="shortcut icon" href="./assets/img/cloudy.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="clouds-bg"></div>
+
+    <!-- Theme Switch -->
+    <button id="theme-toggle" title="Toggle Theme" aria-label="Toggle Dark/Light Theme">
+        <img id="theme-img" src="https://img.icons8.com/ios-filled/28/ffffff/moon-symbol.png" alt="Theme Toggle" />
+    </button>
+
+    <!-- Favorites Bar -->
+    <div id="favorites" aria-label="Favorite Cities"></div>
+
+    <div id="weather-container" role="main" aria-live="polite">
+        <h2>
+            <img src="https://img.icons8.com/fluency/48/000000/partly-cloudy-day.png" alt="Weather Icon"
+                class="header-icon" />
+            Weather App
+        </h2>
+
+        <div id="temp-toggle">
+            <label for="unit-switch" style="font-weight:700; cursor:pointer;">
+                <input type="checkbox" id="unit-switch" style="accent-color:#4682ec;" />
+                Show °F
+            </label>
+        </div>
+
+        <div class="search-row">
+            <button id="get-location-btn" title="Use Current Location" class="small-btn"
+                aria-label="Use Current Location">
+                <img src="https://img.icons8.com/ios-filled/22/ffffff/marker.png" alt="Location" />
+            </button>
+            <input type="text" id="city" placeholder="Enter city" autocomplete="off" aria-label="City Name" />
+            <button id="search-btn" title="Search Weather" aria-label="Search Weather">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/search--v1.png" alt="Search" />
+            </button>
+        </div>
+
+        <img id="weather-icon" class="large-icon" alt="" role="img" aria-hidden="true" />
+
+        <div id="temp-div" aria-live="polite"></div>
+        <div id="weather-info"></div>
+        <div id="extra-info"></div>
+        <div id="hourly-forecast" aria-label="Hourly Weather Forecast"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
