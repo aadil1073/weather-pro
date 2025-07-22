@@ -1,4 +1,4 @@
-const apiKey = '1a09fba8c96cf38d020263f44d7e5c5d';
+const apiKey = 'Write your own api key';
 let useF = false;
 window.lastWeatherData = null;
 window.lastForecastData = null;
